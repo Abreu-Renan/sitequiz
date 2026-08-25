@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vamos ver se você conhece a gente mesmo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section id="quiz" class="quiz-card" aria-live="polite">
+        <div class="quiz-header">
+          <span id="counter" class="question-counter">Pergunta 1/3</span>
+        </div>
+        <div class="progress-wrap" aria-label="Progresso do quiz">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <h1>Teste de Personalidade</h1>
+        <p id="question" class="question"></p>
+        <div id="options" class="options" aria-label="Opções de resposta"></div>
+        <div class="quiz-actions">
+          <button id="backBtn" class="back-btn" type="button" hidden>
+            Voltar
+          </button>
+        </div>
+      </section>
+
+      <section id="loading" class="loading" aria-live="polite">
+        <div class="loading-spinner"></div>
+        <p id="loadingText" class="loading-text">
+          Analisando suas respostas...
+        </p>
+        <p id="loadingSubText" class="loading-subtext">
+          Calculando nível de titio...
+        </p>
+        <div class="loading-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section id="result" class="result" aria-live="polite">
+        <div class="result-badge">Confirmação</div>
+        <h2>🎉 Parabéns! Você vai ser TITIO! 🎉</h2>
+
+        <div
+          class="placeholder-image"
+          aria-label="Espaço para foto do ultrassom"
+        >
+          <img
+            src="imagem/WhatsApp Image 2026-08-24 at 23.08.54.jpeg"
+            alt="Foto do ultrassom em breve"
+          />
+        </div>
+
+        <p id="resultText">Sim, é isso mesmo! A Meg está grávida!</p>
+        <button id="restartBtn" class="restart-btn" type="button">
+          Refazer quiz
+        </button>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
